@@ -1,7 +1,12 @@
 const form = document.getElementById("contactForm");
+const submitBtn = document.getElementById("submitBtn");
 
 form.addEventListener("submit", async (e) => {
   e.preventDefault();
+
+  // 🔥 Change button state
+  submitBtn.disabled = true;
+  submitBtn.innerText = "Sending...";
 
   const data = {
     name: document.getElementById("name").value,
@@ -25,14 +30,22 @@ form.addEventListener("submit", async (e) => {
     const result = await res.json();
 
     if (res.ok) {
-      alert("✅ Message sent successfully!");
+      submitBtn.innerText = "Sent ✅";
       form.reset();
     } else {
-      alert("❌ Failed: " + result.message);
+      submitBtn.innerText = "Failed ❌";
+      alert(result.message || "Something went wrong");
     }
 
   } catch (err) {
     console.error("Frontend Error:", err);
-    alert("❌ Failed to send message");
+    submitBtn.innerText = "Failed ❌";
+    alert("Failed to send message");
   }
+
+  // 🔁 Restore button after 2 seconds
+  setTimeout(() => {
+    submitBtn.disabled = false;
+    submitBtn.innerText = "Send Message";
+  }, 2000);
 });
