@@ -13,152 +13,319 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
     <link rel="stylesheet" href="./CSS/styles.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
+
 </head>
 
 <body>
-    <nav
-        class="navbar navbar-expand-lg bg-body-tertiary py-4 text-uppercase border-light-subtle border-bottom sticky-top">
-        <div class="container">
-            <a class="navbar-brand fs-2" href="#">Lokesh Manickam</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
-                aria-label="Toggle navigation">
+    <nav class="navbar navbar-expand-lg py-3 sticky-top">
+        <div class="container-fluid px-5">
+
+            <!-- Logo / Name -->
+            <a class="navbar-brand fw-bold" href="#">Lokesh Manickam</a>
+
+            <!-- Toggle for Mobile -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent">
                 <span class="navbar-toggler-icon"></span>
             </button>
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav ms-auto mb-2 mb-lg-0 gap-4">
+
+            <!-- Nav Links -->
+            <div class="collapse navbar-collapse" id="navbarContent">
+                <ul class="navbar-nav ms-auto align-items-lg-center gap-3">
+
                     <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                        <a class="nav-link" href="#home">Home</a>
                     </li>
+
                     <li class="nav-item">
                         <a class="nav-link" href="#about">About</a>
                     </li>
+
                     <li class="nav-item">
                         <a class="nav-link" href="#skills">Skills</a>
                     </li>
+
                     <li class="nav-item">
-                        <a class="nav-link" href="#contact">Contacts</a>
+                        <a class="nav-link" href="#projects">Projects</a>
                     </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Contact</a>
+                    </li>
+
+                    <!-- Resume Button -->
+                    <li class="nav-item">
+                        <a href="./Resume/Lokesh_Manickam_Resume.pdf" class="btn btn-sm btn-primary" target="_blank">
+                            Resume
+                        </a>
+                    </li>
+
+                    <!-- Theme Toggle -->
+                    <button id="themeToggle" class="theme-btn">
+                        <i id="themeIcon" class="bi bi-moon-fill"></i>
+                    </button>
+
+
                 </ul>
             </div>
+
         </div>
     </nav>
-    <section class="banner text-center">
+
+    <section class="banner d-flex align-items-center text-center" id="home">
         <div class="container">
-            <div class="row">
-                <div class="col-md-12">
-                    <div class="m-auto w-75">
-                        <h1 class="pb-3">Hi, I'm Lokesh Manickam SK</h1>
 
-                        <h4 class="pb-3">
-                            Electrical Engineering Student with skills in Web & Programming Fundamentals,
-                            Full Stack and Data Foundations, and Embedded Systems Projects
-                        </h4>
+            <h1 class="display-4 fw-bold mb-3">
+                Hi, I'm Lokesh Manickam
+            </h1>
 
-                        <a href="https://wa.me/919597468580?text=Hello%20Lokesh,%20I%20viewed%20your%20portfolio%20and%20would%20like%20to%20connect."
-                            class="btn btn-dark btn-lg" target="_blank">
-                            Contact Me
-                        </a>
-                    </div>
-                </div>
+            <p class="lead mb-4">
+                Electrical Engineering Student building Full-Stack,
+                IoT & Intelligent Engineering Solutions.
+            </p>
+
+            <div class="banner-buttons">
+                <a href="#projects" class="btn btn-primary btn-lg me-3">
+                    View Projects
+                </a>
+                <a href="https://wa.me/919597468580?text=Hello%20Lokesh,%20I%20viewed%20your%20portfolio%20and%20would%20like%20to%20connect."
+                    target="_blank" class="btn btn-success btn-lg">
+                    Contact Me
+                </a>
             </div>
+
         </div>
     </section>
 
-    <section id="about">
+
+    <section id="about" class="padding">
         <div class="container">
-            <div class="row align-items-center py-5">
-                <div class="col-md-6">
-                    <h5 class="text-uppercase">About Me</h5>
-                    <p class="pt-3">I am an Electrical Engineering student with a strong interest in software
-                        development and modern technology solutions. I have built a solid foundation in web and
-                        programming fundamentals, full stack basics, and data foundations through certifications and
-                        hands-on learning.</p>
-                    <p class="pt-3">I have completed industry-recognized certifications from IBM SkillsBuild, Coursera,
-                        and Deloitte, which strengthened my understanding of programming, data concepts, and real-world
-                        problem solving.</p>
-                    <p class="pt-3">In addition to software skills, I have practical exposure to embedded systems
-                        through project work, where I applied logical thinking and engineering principles to build
-                        real-time solutions.</p>
-                    <p class="pt-3">I am currently seeking internship or entry-level opportunities in software, IT, or
-                        technology-driven roles where I can learn, contribute, and grow professionally.</p>
-                    <p>You can download my resume to get a detailed overview of my academic background, technical
-                        skills, certifications, and project experience.</p>
-                    <p>I am actively seeking internship and entry-level opportunities in software, IT, data, and
-                        embedded systems–related roles where I can apply my skills and continue learning.</p>
-                    <a href="./Resume/Lokesh_Manickam_Resume.pdf" class="btn btn-outline-dark btn-lg" download>
+
+            <div class="row align-items-center">
+
+                <!-- LEFT SIDE CONTENT -->
+                <div class="col-lg-6">
+
+                    <h2 class="mb-4 fw-bold">About Me</h2>
+
+                    <p class="lead">
+                        Electrical Engineering student passionate about building intelligent
+                        systems that combine hardware, software, and data-driven solutions.
+                    </p>
+
+                    <p class="least">
+                        I have built strong foundations in full-stack development,
+                        embedded systems, and applied problem-solving through hands-on projects.
+                        My work focuses on creating practical, real-world engineering solutions.
+                    </p>
+
+                    <!-- Strength Highlights -->
+                    <div class="about-highlights mt-4">
+                        <div>⚡ Full-Stack & Backend Development</div>
+                        <div>🔌 Embedded & IoT Systems</div>
+                        <div>📊 Data & Analytical Thinking</div>
+                        <div>🧠 Problem-Solving & System Design</div>
+                    </div>
+
+                    <a href="./Resume/Lokesh_Manickam_Resume.pdf" class="btn btn-primary mt-4" target="_blank">
                         Download Resume
                     </a>
+
                 </div>
-                <div class="col-md-6 text-center">
-                    <img src="./images/lokeshmanickam.jpg" loading="lazy" alt="Lokesh Manickam" class="img-fluid w-75">
+
+                <!-- RIGHT SIDE IMAGE -->
+                <div class="col-lg-6 text-center mt-4 mt-lg-0">
+                    <img src="./images/lokeshmanickam.jpg" class="img-fluid rounded-4 shadow" alt="Lokesh Manickam">
                 </div>
+
             </div>
+
         </div>
     </section>
-    <section id="skills" class="padding text-center bg-light">
+
+    <section id="skills" class="padding bg-light text-center">
         <div class="container">
-            <div class="row align-items-center py-5">
-                <div class="col-md-12">
-                    <h2 class="text-uppercase">Skills</h2>
+
+            <!-- Title -->
+            <h2 class="text-uppercase mb-5">Skills</h2>
+
+            <!-- Scroll Container -->
+            <div class="skills-scroll">
+
+                <!-- CARD 1 -->
+                <div class="skill-card">
+                    <h5>🌐 Software & Web Development</h5>
+                    <p>Build responsive websites and web apps using HTML, CSS, and JavaScript.</p>
                 </div>
+
+                <!-- CARD 2 -->
+                <div class="skill-card">
+                    <h5>📊 Data & Analytics</h5>
+                    <p>Analyze datasets and extract insights using analytical thinking.</p>
+                </div>
+
+                <!-- CARD 3 -->
+                <div class="skill-card">
+                    <h5>🧠 Programming & Problem Solving</h5>
+                    <p>Design efficient solutions using logical and programming skills.</p>
+                </div>
+
+                <!-- CARD 4 -->
+                <div class="skill-card">
+                    <h5>🔌 Embedded Systems</h5>
+                    <p>Develop hardware projects using ESP32, Arduino, and sensors.</p>
+                </div>
+
+                <!-- CARD 5 -->
+                <div class="skill-card">
+                    <h5>⚡ Electrical Engineering</h5>
+                    <p>Foundation in circuits, power systems, and electronics.</p>
+                </div>
+
+                <!-- CARD 6 -->
+                <div class="skill-card">
+                    <h5>🛠 Tools & Platforms</h5>
+                    <p>VS Code, Git, MATLAB Simulink for development and simulation.</p>
+                </div>
+
             </div>
 
-            <div class="row justify-content-center g-4">
-                <div class="col-md-3">
-                    <div class="card h-100 pb-3">
-                        <img src="./images/skill1.jpg" class="card-img-top w-40 m-auto pt-4"
-                            alt="Software & Web Development">
-                        <div class="card-body">
-                            <h5 class="card-title">Software & Web Development</h5>
-                            <p class="card-text">
-                                HTML, CSS, JavaScript, Web Development Fundamentals,
-                                Programming Fundamentals, Full Stack Development (Basics)
-                            </p>
-                        </div>
-                    </div>
+        </div>
+    </section>
+
+    <section id="projects" class="padding text-center">
+
+        <div class="container">
+
+            <h2 class="text-uppercase mb-5">Projects</h2>
+
+            <!-- ⭐ FEATURED PROJECT -->
+            <div class="card p-5 mb-5 shadow-lg border-0">
+
+                <!-- Badge -->
+                <span class="badge bg-primary mb-3">⭐ Featured Project</span>
+
+                <!-- Title -->
+                <h3 class="mb-3">
+                    IoT & AI-Based Predictive Maintenance for Irrigation Pumps
+                </h3>
+
+                <!-- Description -->
+                <p class="mb-3">
+                    Developed a smart monitoring system using IoT sensors to track real-time
+                    operational parameters of irrigation pumps. Applied AI-based analysis to
+                    predict early-stage faults such as dry run and overload conditions,
+                    enabling preventive maintenance and reducing downtime.
+                </p>
+
+                <!-- Role -->
+                <p><strong>Role:</strong> System architecture design, sensor integration,
+                    and AI-based fault prediction implementation.</p>
+
+                <!-- Tech -->
+                <p><strong>Tech:</strong> ESP32, IoT Sensors, Embedded Systems,
+                    Data Analysis, AI Techniques</p>
+
+                <!-- Buttons -->
+                <div class="mt-3">
+                    <a href="#" class="btn btn-outline-dark btn-sm">GitHub</a>
+                    <a href="#" class="btn btn-primary btn-sm">Project Details</a>
                 </div>
 
-                <div class="col-md-3">
-                    <div class="card h-100 pb-3">
-                        <img src="./images/skill2.jpg" class="card-img-top w-40 m-auto pt-4" alt="Data & Analytics">
-                        <div class="card-body">
-                            <h5 class="card-title">Data & Analytics</h5>
-                            <p class="card-text">
-                                Data Foundations, Data Analysis Basics,
-                                Data Interpretation, Data-Driven Thinking
-                            </p>
-                        </div>
-                    </div>
+            </div>
+            <div class="card h-100 p-4">
+
+                <!-- Title -->
+                <h5 class="card-title">Smart Power Theft Detection System</h5>
+
+                <!-- Description -->
+                <p class="card-text">
+                    Designed a system to detect illegal electricity tapping by monitoring voltage and current variations
+                    across the distribution line.
+                    The system generates alerts when abnormal consumption patterns are detected, improving power
+                    monitoring and loss prevention.
+
+                </p>
+
+                <!-- Role -->
+                <p><strong>Role:</strong> Hardware design, sensor integration, and ESP32 programming for anomaly
+                    detection and alert system.
+                </p>
+
+                <!-- Tech -->
+                <p><strong>Tech:</strong> ESP32, Voltage & Current Sensors, Embedded Systems, Power Monitoring
+                </p>
+
+                <!-- Links (Optional) -->
+                <div class="mt-2">
+                    <a href="#" class="btn btn-outline-primary btn-sm">GitHub</a>
+                    <a href="#" class="btn btn-primary btn-sm">Demo</a>
                 </div>
 
-                <div class="col-md-3">
-                    <div class="card h-100 pb-3">
-                        <img src="./images/skill3.jpg" class="card-img-top w-40 m-auto pt-4" alt="Embedded Systems">
-                        <div class="card-body">
-                            <h5 class="card-title">Embedded Systems (Project Exposure)</h5>
-                            <p class="card-text">
-                                Embedded Systems, ESP32, Arduino,
-                                Microcontroller Basics, Sensors and Actuators
-                            </p>
-                        </div>
-                    </div>
+            </div>
+            <div class="card h-100 p-4">
+
+                <!-- Title -->
+                <h5 class="card-title">Smart Street Light Fault Detection System</h5>
+
+                <!-- Description -->
+                <p class="card-text">
+                    Developed an automated system to detect faulty street lights using LDR sensors and real-time
+                    monitoring.
+                    The system identifies malfunctioning lights and displays alerts, enabling faster maintenance and
+                    improved energy efficiency.
+
+                </p>
+
+                <!-- Role -->
+                <p><strong>Role:</strong> Sensor integration, system logic development, and ESP32-based monitoring
+                    implementation.
+                </p>
+
+                <!-- Tech -->
+                <p><strong>Tech:</strong> ESP32, LDR Sensors, Embedded Systems, Automation
+                </p>
+
+                <!-- Links (Optional) -->
+                <div class="mt-2">
+                    <a href="#" class="btn btn-outline-primary btn-sm">GitHub</a>
+                    <a href="#" class="btn btn-primary btn-sm">Demo</a>
                 </div>
 
-                <div class="col-md-3">
-                    <div class="card h-100 pb-3">
-                        <img src="./images/skill4.jpg" class="card-img-top w-40 m-auto pt-4" alt="Tools & Platforms">
-                        <div class="card-body">
-                            <h5 class="card-title">Tools & Platforms</h5>
-                            <p class="card-text">
-                                Visual Studio Code, Git (Basics), MATLAB Simulink
-                            </p>
-                        </div>
-                    </div>
+            </div>
+            <div class="card h-100 p-4">
+
+                <!-- Title -->
+                <h5 class="card-title">Full-Stack Portfolio Website</h5>
+
+                <!-- Description -->
+                <p class="card-text">
+                    Designed and developed a personal portfolio website with a responsive UI and backend API for contact
+                    form processing.
+                    Integrated MongoDB database for message storage and deployed the application for live access.
+
+                </p>
+
+                <!-- Role -->
+                <p><strong>Role:</strong> Full-stack development including frontend design, backend API creation,
+                    database integration, and deployment.
+                </p>
+
+                <!-- Tech -->
+                <p><strong>Tech:</strong> HTML, CSS, JavaScript, Node.js, Express.js, MongoDB
+                </p>
+
+                <!-- Links (Optional) -->
+                <div class="mt-2">
+                    <a href="#" class="btn btn-outline-primary btn-sm">GitHub</a>
+                    <a href="#" class="btn btn-primary btn-sm">Demo</a>
                 </div>
+
             </div>
         </div>
     </section>
+
+
 
     <section id="contact" class="padding bg-dark text-white">
         <div class="container">
@@ -201,34 +368,33 @@
 
                 </div>
             </div>
-            <div class="row text-center py-5">
-                <div class="col-md-12">
-                    <h5>Connect with me on Social Media</h5>
+            <div class="text-center mt-4 social-links">
 
-                    <img src="./images/linkedin.png" alt="LinkedIn" class="social-icon me-2 align-middle">
-                    <a href="https://www.linkedin.com/in/lokesh-manickam-s-k" target="_blank"
-                        class="text-center mx-2 fs-5">LinkedIn</a>
+                <!-- LinkedIn -->
+                <a href="https://www.linkedin.com/in/lokesh-manickam-s-k" target="_blank" class="social-icon">
+                    <i class="bi bi-linkedin"></i>
+                </a>
 
-                    <br>
+                <!-- GitHub -->
+                <a href="https://github.com/LokeshManickam" target="_blank" class="social-icon">
+                    <i class="bi bi-github"></i>
+                </a>
 
-                    <img src="./images/insta.jpg" alt="Instagram" class="social-icon me-2 align-middle">
-                    <a href="https://www.instagram.com/itz_manickam/" target="_blank"
-                        class="text-center mx-2 fs-5">Instagram</a>
+                <!-- Instagram -->
+                <a href="https://www.instagram.com/itz_manickam/" target="_blank" class="social-icon">
+                    <i class="bi bi-instagram"></i>
+                </a>
 
-                    <br>
-
-                    <img src="./images/mail.jpg" alt="Email" class="social-icon me-2 align-middle">
-                    <a href="mailto:lokeshmanickam2005@gmail.com?subject=Portfolio%20Contact"
-                        class="text-center mx-2 fs-5">
-                        Email
-                    </a>
-
-                </div>
+                <!-- Email -->
+                <a href="mailto:lokeshmanickam2005@gmail.com" class="social-icon">
+                    <i class="bi bi-envelope-fill"></i>
+                </a>
 
             </div>
+
         </div>
     </section>
-    <footer class="bg-body-tertiary text-center text-uppercase py-4 border-light-subtle border-top">
+    <footer class="footer text-center py-4">
         <div class="container">
             <div class="row">
                 <div class="col-md-12">
@@ -242,4 +408,6 @@
     integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
     crossorigin="anonymous"></script>
 <script src="./js/contactform.js"></script>
+<script src="./js/ui.js"></script>
+
 </html>
