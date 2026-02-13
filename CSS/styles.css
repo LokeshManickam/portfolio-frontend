@@ -308,3 +308,153 @@ body.dark .footer {
 .whatsapp-float:hover {
   transform: scale(1.1);
 }
+/* =========================================
+   🌍 RESPONSIVE DESIGN – ALL DEVICES
+========================================= */
+
+/* ---------- Large Screens (1200px+) ---------- */
+@media (min-width: 1200px) {
+  .banner {
+    padding: 250px 0;
+  }
+}
+
+/* ---------- Laptop / Desktop (992px–1199px) ---------- */
+@media (max-width: 1199px) {
+  .banner {
+    padding: 200px 0;
+  }
+
+  .navbar .nav-link {
+    font-size: 1.4rem;
+  }
+
+  .about-highlights div {
+    font-size: 1.2rem;
+  }
+}
+
+/* ---------- Tablet (768px–991px) ---------- */
+@media (max-width: 991px) {
+  .banner {
+    padding: 160px 0;
+  }
+
+  .banner h1 {
+    font-size: 2.2rem;
+  }
+
+  .banner p {
+    font-size: 1.1rem;
+  }
+
+  .navbar .nav-link {
+    font-size: 1.2rem;
+  }
+
+  .about-highlights div {
+    font-size: 1.1rem;
+  }
+
+  #about .lead {
+    font-size: 1.3rem;
+  }
+
+  #about .least {
+    font-size: 1.05rem;
+  }
+
+  .skill-card {
+    min-width: 240px;
+  }
+}
+
+/* ---------- Mobile Devices (≤767px) ---------- */
+@media (max-width: 767px) {
+
+  /* Banner */
+  .banner {
+    padding: 120px 0;
+    text-align: center;
+  }
+
+  .banner h1 {
+    font-size: 1.9rem;
+  }
+
+  .banner p {
+    font-size: 1rem;
+  }
+
+  /* Navbar */
+  .navbar {
+    padding: 20px 0 !important;
+  }
+
+  .navbar-brand {
+    font-size: 1.4rem;
+  }
+
+  .navbar .nav-link {
+    font-size: 1rem;
+    text-align: center;
+  }
+
+  /* About Section */
+  #about .lead {
+    font-size: 1.1rem;
+  }
+
+  #about .least {
+    font-size: 0.95rem;
+  }
+
+  .about-highlights div {
+    font-size: 1rem;
+  }
+
+  /* Skill Cards */
+  .skill-card {
+    min-width: 220px;
+    padding: 20px;
+  }
+
+  /* Project Cards */
+  .card {
+    padding: 20px !important;
+    margin-bottom: 20px;
+  }
+
+  /* Contact Form */
+  #contact form {
+    padding: 0 10px;
+  }
+}
+
+/* ---------- Extra Small Phones (≤480px) ---------- */
+@media (max-width: 480px) {
+
+  .banner {
+    padding: 100px 0;
+  }
+
+  .banner h1 {
+    font-size: 1.6rem;
+  }
+
+  .banner p {
+    font-size: 0.9rem;
+  }
+
+  .navbar-brand {
+    font-size: 1.2rem;
+  }
+
+  .skill-card {
+    min-width: 200px;
+  }
+
+  .about-highlights div {
+    font-size: 0.95rem;
+  }
+}
