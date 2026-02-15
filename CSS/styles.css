@@ -60,6 +60,26 @@ body.dark .banner {
   font-weight: 500;
 }
 
+/* Banner buttons layout */
+.banner-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 16px;
+  flex-wrap: wrap; /* important for mobile stacking */
+}
+
+/* Mobile spacing improvement */
+@media (max-width: 576px) {
+  .banner-buttons {
+    gap: 12px;
+  }
+
+  .banner-buttons .btn {
+    width: 100%; /* full width buttons on mobile */
+  }
+}
+
+
 /* ===============================
    DARK MODE GLOBAL
 =================================*/
